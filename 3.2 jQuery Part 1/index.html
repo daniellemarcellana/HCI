@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY APPLICATION</title>
+
+    <!-- JQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <style>
+        .container {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid rgb(52, 97, 148);
+            max-width: 22rem;
+            height: 11rem;
+        }
+
+        h3 {
+            text-align: center;
+            color: rgb(38, 100, 182);
+        }
+
+        label {
+            display: inline;
+
+        }
+
+        #display {
+            outline-style: solid;
+            outline-color: red;
+            position: absolute;
+            left: 215px;
+            top: 185px;
+        }
+
+        #btnDisplay {
+            color: white;
+            position: absolute;
+            left: 212px;
+            top: 145px;
+            background-color: rgb(32, 110, 173);
+            border-radius: 8px;
+            width: 170px;
+        }
+
+        #text_typed {
+            outline-style: solid;
+            outline-color: #4795fc;
+            position: absolute;
+            left: 215px;
+            top: 110px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container">
+        <h3>SIMPLE JQUERY APPLICATION</h3>
+        <label>Type the Text Here:</label> <input type="text" id="text_typed">
+        <br>
+        <button id="btnDisplay" type="button">Click to Display</button>
+        <br> <br> <br>
+        <label>The Word You Typed:</label> <input type="text" id="display">
+    </div>
+
+    <!-- JQuery Script -->
+    <script>
+        $(document).ready(function () {
+            $("#btnDisplay").click(function () {
+                var text_typed = $("#text_typed").val();
+                $("#display").val(text_typed);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
