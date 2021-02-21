@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- JQuery Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .background_image {
+            background-image: url('bg_pic.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .card {
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body class="background_image">
+    <!-- Navigation Bar -->
+    <section>
+        <div class="container-fluid mx-auto">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><i class="fab fa-accusoft"></i> Ford</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" mr-1> MUSTANG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" mr-1> BRONCO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" mr-1> FORDS USED</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ALL VEHICLES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">MUSTANG</a>
+                                <a class="dropdown-item" href="#">BRONCO</a>
+                                <a class="dropdown-item" href="#">CARS</a>
+                                <a class="dropdown-item" href="#">SUVS & CROSSOVERS</a>
+                                <a class="dropdown-item" href="#">ELECTRIFIED</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/responsive/index.html" mr-1> HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-sign-in-alt mr-1"></i>My Account
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/responsive/login.html">Login</a>
+                                <a class="dropdown-item" href="/jQuery2/index.html">Register</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- End Navigation Bar-->
+
+    <!-- Registration Form -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mx-auto mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title text-center mt-2">Register Here</h4>
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="username" class="font-weight-bold"><i
+                                                class="fas fa-user text-primary mr-1"></i>Username</label>
+                                        <input type="text" name="username" id="username" class="form-control"
+                                            placeholder="Enter your username" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="email" class="font-weight-bold"><i
+                                                class="fas fa-envelope text-primary mr-1"></i>Email</label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="example@email.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="password" class="font-weight-bold"><i
+                                                class="fas fa-unlock-alt text-primary mr-1"></i>Password</label>
+                                        <input type="password" class="form-control" name="password" id="password"
+                                            placeholder="" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="confirm_password" class="font-weight-bold"><i
+                                                class="fas fa-check-circle text-success mr-1"></i>Confirm
+                                            Password</label>
+                                        <input type="password" class="form-control" name="confirm_password"
+                                            id="confirm_password" placeholder="Re-type your password" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-check mb-2">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="cb_terms"
+                                                id="cb_terms" value="checkedValue">
+                                            I have read and agree to the Terms and Conditions and Privacy Policy
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-10 mx-auto mt-3">
+                                    <button type="button" name="btnsubmit" id="btnsubmit"
+                                        class="btn btn-primary btn-block font-weight-bold"
+                                        style="border-radius: 20px;">SIGN UP</button>
+                                </div>
+
+                                <div class="col-md-12 mt-3 text-center">
+                                    <p>Already have an account? <a href="/responsive/login.html"
+                                            class="font-weight-bold">Login here</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JQuery Script -->
+    <section>
+        <script>
+            $(document).ready(function () {
+                $("#btnsubmit").click(function () {
+                    var username = $("#username").val()
+                    var email = $("#email").val()
+                    var password = $("#password").val()
+                    var confirm_password = $("#confirm_password").val();
+
+                    if (username == "" | email == "" | password == "" | confirm_password == "") {
+                        alert("Please check your form again. Fill out all the required fields.")
+                    }
+                    else {
+                        
+                            var confirmation_msg = (password == confirm_password) ? "Hello, " + username + "! Welcome to our website. You input the following information:" + "\nEmail: " + email +
+                            "\nPassword: " + password:
+                            "Your password does not match.";
+                        alert(confirmation_msg);
+                        
+            }
+                })
+            })
+
+
+
+
+        </script>
+    </section>
+
+
+
+
+</body>
+
+</html>
